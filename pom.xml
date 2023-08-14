@@ -368,17 +368,15 @@
 		<tag>HEAD</tag>
 	</scm>
 	<distributionManagement>
-	</distributionManagement>
-	<repositories>
-		<repository>
+		<snapshotRepository>
 			<id>github</id>
 			<name>GitHub Packages</name>
 			<url>https://maven.pkg.github.com/ecodef/spring-search/</url>
-		</repository>
+		</snapshotRepository>
 		<repository>
 			<id>ossrh</id>
 			<name>Maven Central</name>
 			<url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
-	</repositories>
+	</distributionManagement>
 </project>
