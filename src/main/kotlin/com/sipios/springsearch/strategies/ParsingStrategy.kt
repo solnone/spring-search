@@ -10,6 +10,7 @@ import java.time.Instant
 import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.LocalTime
+import java.time.ZonedDateTime
 import java.util.Date
 import java.util.UUID
 import kotlin.reflect.KClass
@@ -73,6 +74,7 @@ interface ParsingStrategy {
                 fieldClass == LocalDate::class -> LocalDateStrategy()
                 fieldClass == LocalTime::class -> LocalTimeStrategy()
                 fieldClass == LocalDateTime::class -> LocalDateTimeStrategy()
+                fieldClass == ZonedDateTime::class -> ZonedDateTimeStrategy()
                 fieldClass == Instant::class -> InstantStrategy()
                 fieldClass == UUID::class -> UUIDStrategy()
                 else -> StringStrategy(searchSpecAnnotation)
